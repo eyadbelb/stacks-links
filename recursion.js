@@ -16,3 +16,15 @@ const calculateSum = (numbers, query) => {
   return count;
 };
 console.log(calculateSum(numbers));
+
+// const sum = (nums) => {
+//   let total = 0;
+//   nums.map((num) => {
+//     if (!isNaN(num)) total += num;
+//     else total += sum(num);
+//   });
+//   return total;
+// };
+// console.log(sum(numbers));
+
+// Zainab's soultion **
