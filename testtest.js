@@ -8,7 +8,7 @@
 // Input: 54
 // Output: no
 
-function fibonacciChecker(num) {
+function isFib(num) {
   let fibSeq = [0, 1],
     i = 1,
     fibSeqL;
@@ -16,19 +16,16 @@ function fibonacciChecker(num) {
     fibSeq.push(i);
     fibSeqL = fibSeq.length - 1;
   }
-  if (fibSeq[fibSeqL] === num) {
+  return fibSeq[fibSeqL] === num;
+}
+
+FibonacciChecker = (num) => {
+  if (isFib(num) === true) {
     return "YES";
   } else {
     return "NO";
   }
-}
-// fibonacciChecker = (num) => {
-//   if (isFib(num) === true) {
-//     return "YES";
-//   } else {
-//     return "NO";
-//   }
-// };
+};
 
-console.log(fibonacciChecker(54));
-console.log(fibonacciChecker(34));
+console.log(FibonacciChecker(54));
+console.log(FibonacciChecker(34));
